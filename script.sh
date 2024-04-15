@@ -22,6 +22,7 @@ function getTxtName {
     echo $output
 }
 
+// TODO: get format to work
 function getFormat {
     sub=$1
     format=""
