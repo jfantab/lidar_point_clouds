@@ -1,2 +1,14 @@
 .DS_STORE
+fuse/__pycache__/*
 point_clouds/*
+clustering/2011_10_03/*
+2011_10_03_calib.zip
+2011_10_03_drive_0047_sync.zip
+fuse/.ipynb_checkpoints/*
+fuse/2011_09_26/*
+fuse/2011_09_28/*
+fuse/2011_10_03/*
+fuse/folder/*
+*.mp4
+fuse/yolov5
+fuse/yolov5s.pt
