@@ -17,7 +17,7 @@ def view(points):
     v = pptk.viewer(points)
 
 def main():
-    file = '../point_clouds/training/velodyne/000111.bin'
+    file = '../data/point_clouds/training/velodyne/000111.bin'
     points = read_file(file)
     print(points.shape)
     points = uniform_subsample(points, 3)
