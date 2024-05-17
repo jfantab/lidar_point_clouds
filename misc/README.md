@@ -1,4 +1,4 @@
-The `generate_samples.py` file generates the file names in the proper format of the KITTI dataset. The dataset expects the length of the filename to be length six and left padded with zeros.
+The `generate_samples.py` file generates the list of sample IDs that the PointPillar data loader uses. The dataset expects the length of the filename to be length six and left padded with zeros.
  
 The `rename.sh` file fixes some of the filename discrepancies between both datasets, since the Object Detection dataset's Velodyne file names have length ten rather than length six.
 
