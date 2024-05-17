@@ -90,6 +90,7 @@ face_idx = [ 1,2,6,5   % front face
 
 for img_idx = 1:nimages
 
+    disp(img_idx)
     out = "";
 
     % compute bounding boxes for visible tracklets
@@ -103,6 +104,10 @@ for img_idx = 1:nimages
           continue;
         end
 
+        if img_idx >= 150
+            disp(tracklets{it})
+        end
+        
         objectType = tracklets{it}.objectType;
         truncation = tracklets{it}.truncation;
 
@@ -163,10 +168,11 @@ for img_idx = 1:nimages
 
     end
 
-    filename = sprintf('../../data/2011_09_26/tracklet_labels/%s.txt', sprintf('%06d', img_idx));
+    filename = sprintf('../../data/2011_09_26/tracklet_labels/%s.txt', sprintf('%06d', img_idx-1));
     fp = fopen(filename, 'w');
     fprintf(fp, "%s", out);
     fclose(fp);
+
     % fprintf("END\n\n");
 
 end
